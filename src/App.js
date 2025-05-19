@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+// src/App.js
+
+import React, { useState } from 'react';
+import ImageCanvas from './components/ImageCanvas';
+import ClassManager from './components/ClassManager';
 import './App.css';
 
 function App() {
+  const [classes, setClasses] = useState([]);
+  const [selectedClass, setSelectedClass] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <ClassManager
+        classes={classes}
+        setClasses={setClasses}
+        selectedClass={selectedClass}
+        setSelectedClass={setSelectedClass}
+      />
+      <ImageCanvas
+        classes={classes}
+        selectedClass={selectedClass}
+      />
     </div>
   );
 }
