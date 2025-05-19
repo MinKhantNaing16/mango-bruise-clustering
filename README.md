@@ -1,8 +1,7 @@
-# Mango Bruise Clustering – Demo App
+# Mango Bruise Clustering By kmean algorithm
 
 This is an interactive web app that allows users to visually label and cluster bruised vs. non-bruised areas on mango images using K-Means Clustering.
-
-🟡 Built with [Create React App](https://github.com/facebook/create-react-app)  
+  
 🟢 Try the **[Demo App](http://localhost:3000)** – open in your browser
 
 ---
