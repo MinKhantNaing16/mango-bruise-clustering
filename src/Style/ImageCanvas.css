@@ -1,0 +1,63 @@
+.button-group {
+  display: flex;
+  gap: 20px; /* space between buttons */
+  align-items: center;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 0.16);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  color: white;
+}
+
+.btn:focus {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
+
+.btn-change {
+  background-color: #2563eb; /* blue */
+}
+
+.btn-change:hover {
+  background-color: #1e40af; /* darker blue */
+  box-shadow: 0 5px 10px rgba(30, 64, 175, 0.4);
+}
+
+.btn-delete {
+  background-color: #dc2626; /* red */
+}
+
+.btn-delete:hover {
+  background-color: #991b1b; /* darker red */
+  box-shadow: 0 5px 10px rgba(153, 27, 27, 0.4);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
